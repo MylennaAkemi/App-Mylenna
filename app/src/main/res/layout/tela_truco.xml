@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEEB"
+    tools:context=".TelaTruco">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textoBaixo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#87CEEB"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/reiniciar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textoCima"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#87CEEB"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="100sp"
+            android:textStyle="bold"
+            android:rotation="180"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/reiniciar"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <Button
+            android:id="@+id/maisUmBaixo"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="#FFB6C1"
+            android:text="+1"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@id/textoBaixo"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/textoBaixo"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+        <Button
+            android:id="@+id/trucoBaixo"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="#FFB6C1"
+            android:text="TRUCO!"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/textoBaixo"
+            app:layout_constraintTop_toBottomOf="@id/textoBaixo" />
+
+        <Button
+            android:id="@+id/maisUmCima"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="#FFB6C1"
+            android:text="+1"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/textoCima"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textoCima"
+            android:rotation="180" />
+
+        <Button
+            android:id="@+id/trucoCima"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:background="#FFB6C1"
+            android:text="TRUCO!"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/textoCima"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/textoCima"
+            android:rotation="180"/>
+
+        <ImageView
+            android:id="@+id/reiniciar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_reload"
+            android:background="@drawable/circle_shape"
+            android:padding="10dp"
+            android:tint="#FFFFFF"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
